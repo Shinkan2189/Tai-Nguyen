@@ -31,6 +31,34 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             overflow: hidden;
             border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        /* Style cho nút Tải PDF */
+        .download-btn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background-color: #ffffff;
+            color: var(--primary-color);
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            z-index: 10;
+        }
+
+        .download-btn:hover {
+            background-color: #f1f5f9;
+            transform: translateY(-2px);
         }
 
         header {
@@ -204,11 +232,33 @@
             color: #0f172a;
         }
 
+        /* Ẩn nút tải khi in/xuất ra PDF */
+        @media print {
+            .download-btn {
+                display: none;
+            }
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+
         @media (max-width: 768px) {
             header {
                 padding: 25px;
                 flex-direction: column;
                 text-align: center;
+            }
+            .download-btn {
+                position: static;
+                margin-top: 15px;
+                width: 100%;
+                justify-content: center;
             }
             .contact-list {
                 justify-content: center;
@@ -222,6 +272,11 @@
 <body>
 
 <div class="container">
+    <!-- Nút Tải CV PDF -->
+    <button onclick="window.print()" class="download-btn">
+        📥 Tải CV (PDF)
+    </button>
+
     <header>
         <div class="avatar-container">
             <img src="4x6 - Đức Tài.jpg" alt="Nguyễn Đức Tài" class="avatar">
