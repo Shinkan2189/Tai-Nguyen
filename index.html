@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Đức Tài - Kế Toán Trưởng / Kế Toán Tổng Hợp Cấp Cao</title>
+    <title>Nguyễn Đức Tài – Quản lý Tài chính – Kế toán | Kế toán trưởng</title>
+    <meta name="description" content="CV Nguyễn Đức Tài – hơn 13 năm kinh nghiệm Tài chính – Kế toán trong Bất động sản, Xây dựng, F&amp;B, Viễn thông; Kế toán trưởng, Trưởng phòng Tài chính, Phó ban Tài chính Tập đoàn.">
+    <meta property="og:title" content="Nguyễn Đức Tài – Tài chính – Kế toán">
+    <meta property="og:description" content="Hơn 13 năm kinh nghiệm Tài chính – Kế toán: quản trị dòng tiền, thu xếp vốn, báo cáo tài chính, kiểm soát nội bộ.">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://shinkan2189.github.io/Tai-Nguyen/4x6%20-%20%C4%90%E1%BB%A9c%20T%C3%A0i.jpg">
     <style>
         :root {
             --primary-color: #1e3a8a;
@@ -81,12 +86,6 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid rgba(255, 255, 255, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            color: #1e3a8a;
-            font-weight: bold;
             background: #e2e8f0;
         }
 
@@ -120,6 +119,15 @@
             align-items: center;
             gap: 6px;
             color: #e2e8f0;
+        }
+
+        .contact-list a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
         }
 
         main {
@@ -232,10 +240,39 @@
             color: #0f172a;
         }
 
+        .verify-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .verify-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 0 40px 30px;
+            font-size: 12px;
+            color: #94a3b8;
+            text-align: right;
+        }
+
         /* Ẩn nút tải khi in/xuất ra PDF */
         @media print {
+            @page {
+                margin: 12mm;
+            }
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
             .download-btn {
                 display: none;
+            }
+            .experience-item,
+            .education-item,
+            .skill-category {
+                break-inside: avoid;
             }
             body {
                 background-color: white;
@@ -245,6 +282,7 @@
                 border: none;
                 margin: 0;
                 max-width: 100%;
+                border-radius: 0;
             }
         }
 
@@ -267,6 +305,44 @@
                 padding: 20px;
             }
         }
+
+        /* Bản in/PDF: giữ bố cục ngang của phần đầu trang, không tách tiêu đề khỏi nội dung */
+        @media print {
+            header {
+                flex-direction: row;
+                text-align: left;
+                padding: 28px 32px;
+                flex-wrap: nowrap;
+            }
+            .contact-list {
+                justify-content: flex-start;
+            }
+            main {
+                padding: 28px 32px;
+            }
+            h3 {
+                break-after: avoid;
+            }
+            body {
+                font-size: 13px;
+                line-height: 1.5;
+            }
+            section {
+                margin-bottom: 22px;
+            }
+            .experience-item li,
+            .education-item {
+                font-size: 12.5px;
+                margin-bottom: 4px;
+            }
+            .skill-tags li {
+                padding: 4px 10px;
+                font-size: 12px;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -285,8 +361,8 @@
             <h1>NGUYỄN ĐỨC TÀI</h1>
             <h2>TRƯỞNG PHÒNG TÀI CHÍNH – KẾ TOÁN | KẾ TOÁN TRƯỞNG</h2>
             <ul class="contact-list">
-                <li>📞 0908.269.345</li>
-                <li>📧 tainguyen013@gmail.com</li>
+                <li>📞 <a href="tel:0908269345">0908.269.345</a></li>
+                <li>📧 <a href="mailto:tainguyen013@gmail.com">tainguyen013@gmail.com</a></li>
                 <li>📍 Phường Vườn Lài, TP. Hồ Chí Minh</li>
             </ul>
         </div>
@@ -296,9 +372,9 @@
         <!-- Giới thiệu bản thân -->
         <section>
             <h3>Giới thiệu bản thân</h3>
-            <p>Chuyên gia Tài chính – Kế toán với hơn 13 năm kinh nghiệm trong các lĩnh vực Bất động sản, Xây dựng, F&B, Dịch vụ và Viễn thông; có kinh nghiệm đảm nhiệm các vị trí Kế toán trưởng và Trưởng phòng Tài chính.</p>
-            <p>Thế mạnh trong quản trị tài chính doanh nghiệp, lập và phân tích báo cáo tài chính, quản trị dòng tiền, ngân sách, kiểm soát chi phí, thuế – kiểm toán và xây dựng hệ thống kiểm soát nội bộ.</p>
-            <p>Có kinh nghiệm tổ chức bộ máy Tài chính – Kế toán, chuẩn hóa quy trình, quản trị rủi ro tài chính và tham mưu cho Ban Tổng Giám đốc trong các quyết định về nguồn vốn, dòng tiền và hiệu quả hoạt động.</p>
+            <p>Chuyên gia Tài chính – Kế toán với hơn 13 năm kinh nghiệm trong các lĩnh vực Bất động sản, Xây dựng, F&B, Dịch vụ và Viễn thông; đã đảm nhiệm các vị trí Kế toán trưởng, Trưởng phòng Tài chính và hiện là Phó ban Tài chính tại một tập đoàn bất động sản.</p>
+            <p>Thế mạnh trong quản trị tài chính doanh nghiệp, lập và phân tích báo cáo tài chính, quản trị dòng tiền, thu xếp vốn và quan hệ tín dụng ngân hàng, ngân sách, kiểm soát chi phí, thuế – kiểm toán và xây dựng hệ thống kiểm soát nội bộ.</p>
+            <p>Có kinh nghiệm tổ chức bộ máy Tài chính – Kế toán, chuẩn hóa quy trình, quản trị rủi ro tài chính và tham mưu cho Ban Lãnh đạo trong các quyết định về nguồn vốn, dòng tiền và hiệu quả hoạt động.</p>
         </section>
 
         <!-- Kỹ năng -->
@@ -311,6 +387,8 @@
                         <li>Kế toán quản trị</li>
                         <li>Lập & Phân tích BCTC</li>
                         <li>Quản trị dòng tiền</li>
+                        <li>Thu xếp vốn & Tín dụng ngân hàng</li>
+                        <li>Phân tích hiệu quả dự án</li>
                         <li>Xây dựng ngân sách (Budgeting)</li>
                         <li>Quản lý thuế & Kiểm toán</li>
                     </ul>
@@ -340,16 +418,29 @@
         <!-- Kinh nghiệm làm việc -->
         <section>
             <h3>Kinh nghiệm làm việc</h3>
-            
+
+            <div class="experience-item">
+                <p class="job-title">PHÓ BAN TÀI CHÍNH – PHÒNG TÀI CHÍNH TẬP ĐOÀN</p>
+                <p class="company-name">CÔNG TY TNHH TẬP ĐOÀN HOÀNG QUÂN | 09/2026 – Hiện tại</p>
+                <p><em>Lĩnh vực: Bất động sản, đầu tư.</em></p>
+                <ul>
+                    <li>Theo dõi và quản lý danh mục khoản vay của tập đoàn tại các ngân hàng; trực tiếp làm việc, đàm phán với ngân hàng về hồ sơ tín dụng và tài sản bảo đảm.</li>
+                    <li>Cùng đội ngũ tài chính tập đoàn quản lý hồ sơ vay vốn, tín dụng của khoảng 30 công ty thành viên và cá nhân liên quan.</li>
+                    <li>Xây dựng phương án tài chính, phương án vay vốn phát triển dự án; soạn tờ trình trình Giám đốc Tài chính và Chủ tịch HĐQT.</li>
+                    <li>Lập báo cáo dòng tiền và báo cáo hiệu quả dự án phục vụ điều hành của Ban Lãnh đạo.</li>
+                    <li>Đề xuất thống nhất hệ thống phần mềm kế toán cho các công ty trong tập đoàn.</li>
+                </ul>
+            </div>
+
             <div class="experience-item">
                 <p class="job-title">TRƯỞNG PHÒNG TÀI CHÍNH</p>
-                <p class="company-name">CÔNG TY CỔ PHẦN FIVE A&CO | 04/2024 – Hiện tại</p>
+                <p class="company-name">CÔNG TY CỔ PHẦN FIVE A&CO | 04/2024 – 08/2026</p>
                 <p><em>Lĩnh vực: Bất động sản, tài chính, xây dựng.</em></p>
                 <ul>
                     <li>Hoàn thiện và vận hành hệ thống kiểm soát tài chính, quy trình luân chuyển chứng từ và quản trị dòng tiền cho doanh nghiệp.</li>
                     <li>Tham mưu chiến lược tài chính, tối ưu hóa nguồn vốn và kiểm soát chặt chẽ chi phí đầu vào, giúp tiết kiệm chi phí vận hành hiệu quả.</li>
                     <li>Trực tiếp giải quyết các bài toán tài chính phức tạp, làm việc với cơ quan thuế, kiểm toán và các tổ chức tài chính.</li>
-                    <li>Quản lý, đào tạo và định hướng phát triển đội ngũ nhân sự phòng kế toán - tài chính.</li>
+                    <li>Quản lý, đào tạo và định hướng phát triển đội ngũ nhân sự phòng Tài chính – Kế toán.</li>
                 </ul>
             </div>
 
@@ -358,8 +449,8 @@
                 <p class="company-name">CÔNG TY CP ĐẦU TƯ KIẾN TRÚC XÂY DỰNG THIẾT THẠCH | 08/2021 – 04/2024</p>
                 <p><em>Lĩnh vực: Xây dựng.</em></p>
                 <ul>
-                    <li>Kiểm soát toàn bộ hệ thống số liệu kế toán, lập báo cáo tài chính, báo cáo quản trị định kỳ cho Ban Tổng Giám Đốc.</li>
-                    <li>Xây dựng và giám sát việc thực hiện ngân sách hoạt động, quản lý chặt chẽ công nợ phải thu - phải trả, giảm thiểu rủi ro dòng tiền.</li>
+                    <li>Kiểm soát toàn bộ hệ thống số liệu kế toán, lập báo cáo tài chính, báo cáo quản trị định kỳ cho Ban Tổng Giám đốc.</li>
+                    <li>Xây dựng và giám sát việc thực hiện ngân sách hoạt động, quản lý chặt chẽ công nợ phải thu – phải trả, giảm thiểu rủi ro dòng tiền.</li>
                     <li>Soát xét hệ thống báo cáo thuế định kỳ và thực hiện quyết toán thuế chính xác với cơ quan nhà nước.</li>
                     <li>Thiết lập từ đầu hệ thống tài khoản, sơ đồ tổ chức bộ máy kế toán và ban hành các quy chế tài chính nội bộ.</li>
                     <li>Lập kế hoạch dòng tiền, phê duyệt các khoản thanh toán, kiểm soát hạn mức công nợ đối với nhà cung cấp và khách hàng lớn.</li>
@@ -369,7 +460,7 @@
             <div class="experience-item">
                 <p class="job-title">KẾ TOÁN TRƯỞNG</p>
                 <p class="company-name">TRUNG TÂM NGÔI SAO SỐ (CN TỔNG CÔNG TY TRUYỀN HÌNH CÁP VIỆT NAM) | 04/2020 – 08/2021</p>
-                <p><em>Lĩnh vực: Dịch vụ truyền hình / Viễn thông</em></p>
+                <p><em>Lĩnh vực: Dịch vụ truyền hình, viễn thông.</em></p>
                 <ul>
                     <li>Quản lý dòng doanh thu, chi phí lớn; đảm bảo tính tuân thủ pháp lý tài chính của chi nhánh theo tiêu chuẩn tổng công ty.</li>
                     <li>Tổ chức công tác kiểm kê tài sản định kỳ, kiểm soát chặt chẽ các khoản mục chi phí phát sinh.</li>
@@ -377,13 +468,13 @@
             </div>
 
             <div class="experience-item">
-                <p class="job-title">KẾ TOÁN TỔNG HỢP - TRỢ LÝ TÀI CHÍNH DỰ ÁN</p>
+                <p class="job-title">KẾ TOÁN TỔNG HỢP – TRỢ LÝ TÀI CHÍNH DỰ ÁN</p>
                 <p class="company-name">CÔNG TY CP TẬP ĐOÀN QUẢN LÝ BĐS WINDSOR | 08/2013 – 04/2020</p>
-                <p><em>Lĩnh vực: Bất động sản, Nhà hàng - khách sạn, F&B</em></p>
+                <p><em>Lĩnh vực: Bất động sản, nhà hàng – khách sạn, F&amp;B.</em></p>
                 <ul>
-                    <li>Đảm bảo hạch toán chính xác các nghiệp vụ kinh tế phát sinh, quản lý kho, tài sản cố định, tính giá thành, doanh thu - giá vốn.</li>
+                    <li>Đảm bảo hạch toán chính xác các nghiệp vụ kinh tế phát sinh, quản lý kho, tài sản cố định, tính giá thành, doanh thu – giá vốn.</li>
                     <li>Lập báo cáo thuế (GTGT, TNDN, TNCN), báo cáo tài chính tháng/quý/năm và chuẩn bị hồ sơ phục vụ các kỳ kiểm toán độc lập cho các công ty trong tập đoàn.</li>
-                    <li>Quản lý dòng tiền dự án: Điều phối và kiểm soát dòng tiền tập trung cho các dự án bất động sản/đầu tư tại khu vực Cần Giuộc, Long An.</li>
+                    <li>Quản lý dòng tiền dự án: điều phối và kiểm soát dòng tiền tập trung cho các dự án bất động sản/đầu tư tại khu vực Cần Giuộc, Long An.</li>
                 </ul>
             </div>
         </section>
@@ -392,13 +483,14 @@
         <section>
             <h3>Học vấn & Chứng chỉ</h3>
             <ul class="education-list">
-<li class="education-item"><strong>Đại học Ngân hàng TP. Hồ Chí Minh</strong> — Cử nhân Tài chính - Ngân hàng, niên khóa 2007 - 2011</li>
-                <li class="education-item"><strong>Học viện Tài chính</strong> — Chứng chỉ Bồi dưỡng Kế toán trưởng, Niên khóa 2022</li>
+                <li class="education-item"><strong>Đại học Ngân hàng TP. Hồ Chí Minh</strong> — Cử nhân Tài chính – Ngân hàng, niên khóa 2007 – 2011</li>
+                <li class="education-item"><strong>Học viện Tài chính</strong> — Chứng chỉ Bồi dưỡng Kế toán trưởng, năm 2022</li>
                 <li class="education-item"><strong>Association of Chartered Certified Accountants (ACCA)</strong> — Hoàn thành cấp độ nền tảng (Foundation Level / ACCA Diploma in Accounting and Business)</li>
-                <li class="education-item"><strong>Google</strong> — Chứng chỉ Phân tích Dữ liệu (Google Data Analytics Professional Certificate) <a href="https://coursera.org/verify/professional-cert/5G2CBS9MELCV" target="_blank" class="verify-link">[Xem chứng chỉ gốc 🔗]</a></li>
+                <li class="education-item"><strong>Google</strong> — Chứng chỉ Phân tích Dữ liệu (Google Data Analytics Professional Certificate) <a href="https://coursera.org/verify/professional-cert/5G2CBS9MELCV" target="_blank" rel="noopener" class="verify-link">[Xem chứng chỉ gốc 🔗]</a></li>
             </ul>
         </section>
     </main>
+    <footer>Cập nhật: 11/2026</footer>
 </div>
 
 </body>
